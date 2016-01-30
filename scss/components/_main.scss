@@ -9,11 +9,27 @@ h1 {
 
 .btn {
     text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    margin: .4em;
+    padding: 4em 16%;
+    border-radius: 30px;
 }
 
 .icon {
     font-family: portfolio;
+    color: $white;
     font-size: 8em;
     padding-left: .5em;
-    color: $white;
+}
+
+.icon:hover,
+.icon:active,
+.icon:focus {
+    color: $grey;
+    animation: shake 1s;
+    -webkit-animation: shake 1s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function:  linear;
 }
