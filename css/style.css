@@ -1,19 +1,20 @@
 /*Imports*/
+html {
+  background: url("http://www.photos-public-domain.com/wp-content/uploads/2011/10/black-cat-fur-texture.jpg");
+}
+
 h1 {
   font-family: sans-serif;
+  color: white;
 }
 
 .btn {
-  display: inline-block;
-  font-weight: bold;
   text-decoration: none;
-  margin: .4em;
-  padding: 4em 16%;
-  border-radius: 30px;
-  color: white;
-  background: white;
 }
 
-.btn:hover {
-  background: #aaa;
+.icon {
+  font-family: portfolio;
+  font-size: 8em;
+  padding-left: .5em;
+  color: white;
 }
