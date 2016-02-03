@@ -1,14 +1,15 @@
-@mixin button ($bg-color){
+@mixin button ($color,$bg-color){
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
     margin: .4em;
-    padding: 4em 16%;
     border-radius: 30px;
-    color: $white;
-    background: $bg-color;
+    color: $color;
+    font-family: portfolio;
+    font-size: 8em;
     &:hover{
-     background: $grey;
+    color: $bg-color;
+    animation: shake 1s;
+    transition-timing-function:  linear;
     }
 }
-

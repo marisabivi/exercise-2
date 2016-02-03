@@ -8,28 +8,57 @@ h1 {
 }
 
 .btn {
-    text-decoration: none;
-    display: inline-block;
+   display: inline-block;
     font-weight: bold;
     text-decoration: none;
     margin: .4em;
-    padding: 4em 16%;
+    padding: 0 16%;
     border-radius: 30px;
 }
 
 .icon {
-    font-family: portfolio;
-    color: $white;
-    font-size: 8em;
-    padding-left: .5em;
+    @include button($white,$grey);
 }
 
-.icon:hover,
-.icon:active,
-.icon:focus {
-    color: $grey;
-    animation: shake 1s;
-    -webkit-animation: shake 1s;
-    -webkit-transition-timing-function: linear;
-    transition-timing-function:  linear;
+@keyframes shake {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20% {
+    transform: translate3d(10px, 0, 0);
+  }
+    
+  30% {
+    transform: translate3d(-10px, 0, 0);
+  }
+    
+  40% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+   50% {
+    transform: translate3d(-10px, 0, 0);
+  }
+    
+   60% {
+    transform: translate3d(-10px, 0, 0);
+  }
+    
+  70% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+   80% {
+    transform: translate3d(-10px, 0, 0);
+  }
+    
+   90% {
+    transform: translate3d(10px, 0, 0);
+  }
+    
 }
